@@ -15,7 +15,7 @@ import { PasswordInput } from "@/components/ui/password-input"
 import useAuth, { isLoggedIn } from "@/hooks/useAuth"
 import { confirmPasswordRules, emailPattern, passwordRules } from "@/utils"
 //import Logo from "/assets/images/fastapi-logo.svg"
-import Logo from "/assets/images/logo-transparent.svg"
+import Logo from "/assets/images/l.svg"
 
 export const Route = createFileRoute("/signup")({
   component: SignUp,
