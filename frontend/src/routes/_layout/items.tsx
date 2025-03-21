@@ -135,7 +135,7 @@ function Items() {
   return (
     <Container maxW="full">
       <Heading size="lg" pt={12}>
-        Items Management
+      Add an Enterprise
       </Heading>
       <AddItem />
       <ItemsTable />

@@ -8,7 +8,7 @@ import type { UserPublic } from "@/client"
 
 const items = [
   { icon: FiHome, title: "Dashboard", path: "/" },
-  { icon: FiBriefcase, title: "Items", path: "/items" },
+  { icon: FiBriefcase, title: "Enterprise", path: "/items" },
   { icon: FiSettings, title: "User Settings", path: "/settings" },
 ]
 
@@ -32,6 +32,7 @@ const SidebarItems = ({ onClose }: SidebarItemsProps) => {
 
   const listItems = finalItems.map(({ icon, title, path }) => (
     <RouterLink key={title} to={path} onClick={onClose}>
+      {/*
       <Flex
         gap={4}
         px={4}
@@ -42,6 +43,19 @@ const SidebarItems = ({ onClose }: SidebarItemsProps) => {
         alignItems="center"
         fontSize="sm"
       >
+      */}
+      <Flex
+        gap={4}
+        px={4}
+        py={2}
+        bg="blue.100" // Light blue background for each item
+        _hover={{
+          background: "blue.200", // Slightly darker blue on hover
+        }}
+        alignItems="center"
+        fontSize="sm"
+      >
+
         <Icon as={icon} alignSelf="center" />
         <Text ml={2}>{title}</Text>
       </Flex>
