@@ -73,31 +73,31 @@ const AddItem = () => {
       onOpenChange={({ open }) => setIsOpen(open)}
     >
       <DialogTrigger asChild>
-        <Button value="add-item" my={4}>
+        <Button value="add-item" my={4} bg="#F27438">
           <FaPlus fontSize="16px" />
-          Add Item
+          Add Enterprise
         </Button>
       </DialogTrigger>
       <DialogContent>
         <form onSubmit={handleSubmit(onSubmit)}>
           <DialogHeader>
-            <DialogTitle>Add Item</DialogTitle>
+            <DialogTitle>Add Enterprise</DialogTitle>
           </DialogHeader>
           <DialogBody>
-            <Text mb={4}>Fill in the details to add a new item.</Text>
+            <Text mb={4}>Fill in the details to add a new enterprise.</Text>
             <VStack gap={4}>
               <Field
                 required
                 invalid={!!errors.title}
                 errorText={errors.title?.message}
-                label="Title"
+                label="Name"
               >
                 <Input
                   id="title"
                   {...register("title", {
-                    required: "Title is required.",
+                    required: "Name is required.",
                   })}
-                  placeholder="Title"
+                  placeholder="Name"
                   type="text"
                 />
               </Field>
@@ -105,12 +105,12 @@ const AddItem = () => {
               <Field
                 invalid={!!errors.description}
                 errorText={errors.description?.message}
-                label="Description"
+                label="Sector"
               >
                 <Input
                   id="description"
                   {...register("description")}
-                  placeholder="Description"
+                  placeholder="Sector"
                   type="text"
                 />
               </Field>
@@ -132,6 +132,7 @@ const AddItem = () => {
               type="submit"
               disabled={!isValid}
               loading={isSubmitting}
+              bg="#F27438"
             >
               Save
             </Button>
