@@ -165,8 +165,8 @@ services:
 
       # Enable redirection for HTTP and HTTPS
       - traefik.http.routers.${STACK_NAME?Variable not set}-frontend-http.middlewares=https-redirect
-    #volumes:
-     # - ./frontend:/app
+    volumes:
+      - ./frontend:/app
 volumes:
   app-db-data:
 
