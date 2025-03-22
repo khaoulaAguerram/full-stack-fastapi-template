@@ -13,15 +13,19 @@ function Navbar() {
       display={display}
       justify="space-between"
       position="sticky"
+      //color="white"
       color="white"
       align="center"
-      bg="bg.muted"
+      bg=" #76CDCD"
       w="100%"
       top={0}
       p={4}
     >
-      <Link to="/">
+      {/*<Link to="/">
         <Image src={Logo} alt="Logo" maxW="3xs" p={2} />
+      </Link>*/}
+      <Link to="/">
+        <Image src={Logo} alt="Logo" maxW="120px" p={2} />
       </Link>
       <Flex gap={2} alignItems="center">
         <UserMenu />

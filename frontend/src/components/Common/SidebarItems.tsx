@@ -48,9 +48,9 @@ const SidebarItems = ({ onClose }: SidebarItemsProps) => {
         gap={4}
         px={4}
         py={2}
-        bg="blue.100" // Light blue background for each item
+        bg="#76CDCD" // Background color for each item
         _hover={{
-          background: "blue.200", // Slightly darker blue on hover
+          background: "#F27438", // Hover color
         }}
         alignItems="center"
         fontSize="sm"
@@ -62,14 +62,24 @@ const SidebarItems = ({ onClose }: SidebarItemsProps) => {
     </RouterLink>
   ))
 
-  return (
+  /*return (
     <>
       <Text fontSize="xs" px={4} py={2} fontWeight="bold">
         Menu
       </Text>
       <Box>{listItems}</Box>
     </>
-  )
+  )*/
+    return (
+      <Box bg="#76CDCD" w="100%" h="100vh" color="white" p={4}> 
+        {/* Full background with requested color */}
+        <Text fontSize="xs" px={4} py={2} fontWeight="bold">
+          Menu
+        </Text>
+        <Box>{listItems}</Box>
+      </Box>
+    );
+  
 }
 
 export default SidebarItems
