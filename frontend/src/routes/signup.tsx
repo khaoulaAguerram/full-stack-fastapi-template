@@ -15,7 +15,7 @@ import { PasswordInput } from "@/components/ui/password-input"
 import useAuth, { isLoggedIn } from "@/hooks/useAuth"
 import { confirmPasswordRules, emailPattern, passwordRules } from "@/utils"
 //import Logo from "/assets/images/fastapi-logo.svg"
-import Logo from "/assets/images/logo-transparent.svg"
+import Logo from "/assets/images/logo-abchir.svg"
 
 export const Route = createFileRoute("/signup")({
   component: SignUp,
@@ -119,7 +119,7 @@ function SignUp() {
             placeholder="Confirm Password"
             errors={errors}
           />
-          <Button variant="solid" type="submit" loading={isSubmitting}>
+          <Button variant="solid" type="submit" loading={isSubmitting} bg="#c167c1">
             Sign Up
           </Button>
           <Text>

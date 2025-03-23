@@ -122,6 +122,7 @@ const UserInformation = () => {
           </Field>
           <Flex mt={4} gap={3}>
             <Button
+              bg="#c167c1"
               variant="solid"
               onClick={toggleEditMode}
               type={editMode ? "button" : "submit"}

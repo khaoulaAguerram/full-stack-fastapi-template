@@ -14,7 +14,7 @@ import { InputGroup } from "@/components/ui/input-group"
 import { PasswordInput } from "@/components/ui/password-input"
 import useAuth, { isLoggedIn } from "@/hooks/useAuth"
 //import Logo from "/assets/images/fastapi-logo.svg"
-import Logo from "/assets/images/logo-transparent.svg"
+import Logo from "/assets/images/logo-abchir.svg"
 import { emailPattern, passwordRules } from "../utils"
 
 export const Route = createFileRoute("/login")({
@@ -101,7 +101,7 @@ function Login() {
         <RouterLink to="/recover-password" className="main-link">
           Forgot Password?
         </RouterLink>
-        <Button variant="solid" type="submit" loading={isSubmitting} size="md">
+        <Button variant="solid" type="submit" loading={isSubmitting} size="md" bg="#c167c1">
           Log In
         </Button>
         <Text>

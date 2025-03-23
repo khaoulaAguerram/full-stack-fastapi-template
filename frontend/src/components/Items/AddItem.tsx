@@ -73,7 +73,7 @@ const AddItem = () => {
       onOpenChange={({ open }) => setIsOpen(open)}
     >
       <DialogTrigger asChild>
-        <Button value="add-item" my={4} bg="#F27438">
+        <Button value="add-item" my={4} bg="#c167c1">
           <FaPlus fontSize="16px" />
           Add Enterprise
         </Button>
@@ -123,6 +123,7 @@ const AddItem = () => {
                 variant="subtle"
                 colorPalette="gray"
                 disabled={isSubmitting}
+                
               >
                 Cancel
               </Button>
@@ -132,7 +133,7 @@ const AddItem = () => {
               type="submit"
               disabled={!isValid}
               loading={isSubmitting}
-              bg="#F27438"
+              bg="#c167c1"
             >
               Save
             </Button>

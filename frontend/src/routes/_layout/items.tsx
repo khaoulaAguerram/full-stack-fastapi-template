@@ -70,9 +70,9 @@ function ItemsTable() {
             <FiSearch />
           </EmptyState.Indicator>
           <VStack textAlign="center">
-            <EmptyState.Title>You don't have any items yet</EmptyState.Title>
+            <EmptyState.Title>You don't have any enterprises yet</EmptyState.Title>
             <EmptyState.Description>
-              Add a new item to get started
+              Add a new enterprise to get started
             </EmptyState.Description>
           </VStack>
         </EmptyState.Content>
@@ -85,9 +85,12 @@ function ItemsTable() {
       <Table.Root size={{ base: "sm", md: "md" }}>
         <Table.Header>
           <Table.Row>
-            <Table.ColumnHeader w="sm">ID</Table.ColumnHeader>
-            <Table.ColumnHeader w="sm">Title</Table.ColumnHeader>
+            {/*<Table.ColumnHeader w="sm">ID</Table.ColumnHeader>*/}
+            {/*<Table.ColumnHeader w="sm">Title</Table.ColumnHeader>
             <Table.ColumnHeader w="sm">Description</Table.ColumnHeader>
+            <Table.ColumnHeader w="sm">Actions</Table.ColumnHeader>*/}
+            <Table.ColumnHeader w="sm">Name</Table.ColumnHeader>
+            <Table.ColumnHeader w="sm">Sector</Table.ColumnHeader>
             <Table.ColumnHeader w="sm">Actions</Table.ColumnHeader>
           </Table.Row>
         </Table.Header>
@@ -95,18 +98,20 @@ function ItemsTable() {
           {items?.map((item) => (
             <Table.Row key={item.id} opacity={isPlaceholderData ? 0.5 : 1}>
               <Table.Cell truncate maxW="sm">
-                {item.id}
-              </Table.Cell>
-              <Table.Cell truncate maxW="sm">
+                {/*{item.id}*/}
                 {item.title}
               </Table.Cell>
-              <Table.Cell
+              <Table.Cell truncate maxW="sm">
+                {/*{item.title}*/}
+                {item.description || "N/A"}
+              </Table.Cell>
+{/*              <Table.Cell
                 color={!item.description ? "gray" : "inherit"}
                 truncate
                 maxW="30%"
               >
                 {item.description || "N/A"}
-              </Table.Cell>
+              </Table.Cell>*/}
               <Table.Cell>
                 <ItemActionsMenu item={item} />
               </Table.Cell>

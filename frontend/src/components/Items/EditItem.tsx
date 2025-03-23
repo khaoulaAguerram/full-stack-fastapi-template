@@ -81,7 +81,7 @@ const EditItem = ({ item }: EditItemProps) => {
       onOpenChange={({ open }) => setIsOpen(open)}
     >
       <DialogTrigger asChild>
-        <Button variant="ghost">
+        <Button variant="ghost" bg="#c167c1">
           <FaExchangeAlt fontSize="16px" />
           Edit Item
         </Button>
@@ -136,7 +136,7 @@ const EditItem = ({ item }: EditItemProps) => {
                   Cancel
                 </Button>
               </DialogActionTrigger>
-              <Button variant="solid" type="submit" loading={isSubmitting}>
+              <Button variant="solid" type="submit" loading={isSubmitting} bg="#c167c1">
                 Save
               </Button>
             </ButtonGroup>

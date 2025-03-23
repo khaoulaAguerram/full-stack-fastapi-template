@@ -81,7 +81,7 @@ const Sidebar = () => {
         display={{ base: "none", md: "flex" }}
         position="sticky"
         //bg="bg.subtle"
-        bg=" #76CDCD"
+        bg=" #DDD0E3 "
         top={0}
         minW="xs"
         h="100vh"

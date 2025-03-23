@@ -42,6 +42,7 @@ const NotFound = () => {
             <Button
               variant="solid"
               colorScheme="teal"
+              bg="#c167c1"
               mt={4}
               alignSelf="center"
             >

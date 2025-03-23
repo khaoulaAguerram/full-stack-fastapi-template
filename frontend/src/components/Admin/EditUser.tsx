@@ -85,7 +85,7 @@ const EditUser = ({ user }: EditUserProps) => {
       onOpenChange={({ open }) => setIsOpen(open)}
     >
       <DialogTrigger asChild>
-        <Button variant="ghost" size="sm">
+        <Button variant="ghost" size="sm"bg="#c167c1">
           <FaExchangeAlt fontSize="16px" />
           Edit User
         </Button>
@@ -206,7 +206,7 @@ const EditUser = ({ user }: EditUserProps) => {
                 Cancel
               </Button>
             </DialogActionTrigger>
-            <Button variant="solid" type="submit" loading={isSubmitting}>
+            <Button variant="solid" type="submit" loading={isSubmitting}bg="#c167c1">
               Save
             </Button>
           </DialogFooter>

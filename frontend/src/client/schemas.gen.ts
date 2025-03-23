@@ -75,7 +75,7 @@ export const ItemCreateSchema = {
       type: "string",
       maxLength: 255,
       minLength: 1,
-      title: "Title",
+      title: "Name",
     },
     description: {
       anyOf: [

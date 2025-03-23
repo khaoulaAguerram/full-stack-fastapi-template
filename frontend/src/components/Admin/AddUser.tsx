@@ -84,7 +84,7 @@ const AddUser = () => {
       onOpenChange={({ open }) => setIsOpen(open)}
     >
       <DialogTrigger asChild>
-        <Button value="add-user" my={4}>
+        <Button value="add-user" my={4} bg="#c167c1">
           <FaPlus fontSize="16px" />
           Add User
         </Button>
@@ -207,11 +207,13 @@ const AddUser = () => {
                 variant="subtle"
                 colorPalette="gray"
                 disabled={isSubmitting}
+                
               >
                 Cancel
               </Button>
             </DialogActionTrigger>
             <Button
+              bg="#c167c1"
               variant="solid"
               type="submit"
               disabled={!isValid}

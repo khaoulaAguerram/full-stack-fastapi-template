@@ -98,7 +98,7 @@ function ResetPassword() {
         {...register("confirm_password", confirmPasswordRules(getValues))}
         placeholder="Confirm Password"
       />
-      <Button variant="solid" type="submit">
+      <Button variant="solid" type="submit" bg="#c167c1">
         Reset Password
       </Button>
     </Container>

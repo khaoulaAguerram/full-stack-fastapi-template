@@ -77,6 +77,7 @@ const ChangePassword = () => {
             type="submit"
             loading={isSubmitting}
             disabled={!isValid}
+            bg="#c167c1"
           >
             Save
           </Button>

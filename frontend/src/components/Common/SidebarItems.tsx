@@ -48,9 +48,9 @@ const SidebarItems = ({ onClose }: SidebarItemsProps) => {
         gap={4}
         px={4}
         py={2}
-        bg="#76CDCD" // Background color for each item
+        bg="#DDD0E3 " // Background color for each item
         _hover={{
-          background: "#F27438", // Hover color
+          background: "#c167c1", // Hover color
         }}
         alignItems="center"
         fontSize="sm"
@@ -71,7 +71,7 @@ const SidebarItems = ({ onClose }: SidebarItemsProps) => {
     </>
   )*/
     return (
-      <Box bg="#76CDCD" w="100%" h="100vh" color="white" p={4}> 
+      <Box bg="#DDD0E3  " w="100%" h="100vh" color="black" p={4}> 
         {/* Full background with requested color */}
         <Text fontSize="xs" px={4} py={2} fontWeight="bold">
           Menu
